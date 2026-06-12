@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matheus Ramos — Mobile Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <span class="logo" id="nav-logo"></span>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section id="hero">
+  <h1 id="hero-name"></h1>
+  <p class="tagline" id="hero-tagline"></p>
+  <div class="btn-group">
+    <a href="#projects" class="btn btn-primary">View Projects</a>
+    <a href="#contact"  class="btn btn-secondary">Contact</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About me</h2>
+  <p id="about-text"></p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn" onclick="slide(-1)">‹</button>
+    <div class="projects-grid" id="projects-grid"></div>
+    <button class="carousel-btn" onclick="slide(1)">›</button>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-list" id="contact-list"></div>
+</section>
+
+<footer id="footer"></footer>
+
+<script src="data.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
